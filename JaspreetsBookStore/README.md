@@ -154,3 +154,6 @@ Solve the error by adding the reference of IUnitOfWork to UnitOfWork.
 
 4:03 PM :- add the view to the Are/Admin/View folder name as index.cshtml and modify the code and link it to the path _Layout,cshtml file.
 
+4:26 PM :-Update the code in _Layout file add the link to category file.The category name was no displayin in the 
+droopdown menu so i look over the code and then change the class that i added wrong and then run the program.
+Everything goes well.
