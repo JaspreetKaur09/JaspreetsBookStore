@@ -151,3 +151,6 @@ Solve the error by adding the reference of IUnitOfWork to UnitOfWork.
 
   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Lunch time ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 3:57 PM :- Add a Categorycontroller to the Admin Area.Update thr cod and upload it to github.
+
+4:03 PM :- add the view to the Are/Admin/View folder name as index.cshtml and modify the code and link it to the path _Layout,cshtml file.
+
