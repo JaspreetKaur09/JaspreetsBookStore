@@ -144,3 +144,10 @@ Build the project and upload to github.
 Error	CS0311	The type 'JaspreetsBooks.DataAccess.Repository.UnitOfWork' cannot be used as type parameter 'TImplementation' in the 
 generic type or method 'ServiceCollectionServiceExtensions.AddScoped<TService, TImplementation>(IServiceCollection)'. 
 There is no implicit reference conversion from 'JaspreetsBooks.DataAccess.Repository.UnitOfWork' to 'JaspreetsBooks.DataAccess.Repository.IRepository.IUnitOfWork'.	JaspreetsBookStore	C:\Users\Jaspreet Kaur\source\repos\JaspreetsBookStore\JaspreetsBookStore\Startup.cs	39	Active
+
+Solve the error by adding the reference of IUnitOfWork to UnitOfWork.
+
+1:38 PM: Update the startup.cs file and upload it to github.
+
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Lunch time ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+3:57 PM :- Add a Categorycontroller to the Admin Area.Update thr cod and upload it to github.
