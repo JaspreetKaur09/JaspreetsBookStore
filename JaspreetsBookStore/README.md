@@ -135,3 +135,12 @@ Redo the assignment as i was not able to add the category table to my database. 
 Build the project and upload to github.
 
 1:59 AM :- add on the new interface ISP_Call to the IRepository folder and then update the code.Upload it to github.
+
+2022-04-07 
+
+11:42 AM :- Create the SP_Call class file in the Repository folder and modify the code. Add the interface and add the using statement in the file.
+
+12:54 PM:- Trying to update the startup.cs file but get thi error :(
+Error	CS0311	The type 'JaspreetsBooks.DataAccess.Repository.UnitOfWork' cannot be used as type parameter 'TImplementation' in the 
+generic type or method 'ServiceCollectionServiceExtensions.AddScoped<TService, TImplementation>(IServiceCollection)'. 
+There is no implicit reference conversion from 'JaspreetsBooks.DataAccess.Repository.UnitOfWork' to 'JaspreetsBooks.DataAccess.Repository.IRepository.IUnitOfWork'.	JaspreetsBookStore	C:\Users\Jaspreet Kaur\source\repos\JaspreetsBookStore\JaspreetsBookStore\Startup.cs	39	Active

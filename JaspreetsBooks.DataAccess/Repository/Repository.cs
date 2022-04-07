@@ -6,23 +6,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace JaspreetsBooks.DataAccess.Repository
 {
+    // Implements all the methods of the IRepository
     public class Repository<T> : IRepository<T> where T : class
     {
-        private readonly ApplicationDbContext _db;
+        // modify the database w/ the db context
+        private readonly ApplicationDbContext _db;      // get the db instance using the constructor and DI 
         internal DbSet<T> dbSet;
-
-        public Repository(ApplicationDbContext db)
+        public Repository(ApplicationDbContext db)     // use hot keys C-T-O-R to build the constructor
         {
             _db = db;
             this.dbSet = _db.Set<T>();
         }
         public void Add(T entity)
         {
-            dbSet.Add(entity);
+            dbSet.Add(entity);      // add context so classes correspond to the DbSet in ApplicationDbContext
         }
 
         public T Get(int id)
@@ -83,9 +83,14 @@ namespace JaspreetsBooks.DataAccess.Repository
             dbSet.Remove(entity);
         }
 
-        public void RemoveRanges(IEnumerable<T> entity)
+        public void RemoveRange(IEnumerable<T> entity)
         {
             dbSet.RemoveRange(entity);
+        }
+
+        void IRepository<T>.RemoveRanges(IEnumerable<T> entity)
+        {
+            throw new NotImplementedException();
         }
     }
 }

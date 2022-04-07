@@ -6,7 +6,7 @@ using System.Text;
 
 namespace JaspreetsBooks.DataAccess.Repository.IRepository
 {
-    interface ISP_Call : IDisposable
+   public interface ISP_Call : IDisposable
     {
         T Single<T>(string procedurename, DynamicParameters param = null);
 
