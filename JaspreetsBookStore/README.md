@@ -159,3 +159,5 @@ droopdown menu so i look over the code and then change the class that i added wr
 Everything goes well.
 
 4:43 PM:- Add the icons to the category page and add the category.js file ,update the code in it.
+
+4:48 PM:-Add the @section call to the index.cshtml file and then save it,upload it to github.
