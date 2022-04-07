@@ -157,3 +157,5 @@ Solve the error by adding the reference of IUnitOfWork to UnitOfWork.
 4:26 PM :-Update the code in _Layout file add the link to category file.The category name was no displayin in the 
 droopdown menu so i look over the code and then change the class that i added wrong and then run the program.
 Everything goes well.
+
+4:43 PM:- Add the icons to the category page and add the category.js file ,update the code in it.
