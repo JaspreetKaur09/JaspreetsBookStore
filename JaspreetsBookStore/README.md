@@ -177,3 +177,9 @@ UPLOAD IT TO GITHUB!
 1:23 AM:- Add the Validation to the add category field. Then upload to github.
 
 1:29 AM:- add the save mthod to CategoryComtoller.cs file.
+
+1:46 AM :- Update the category.js file.
+Run the Application.
+
+**************************************** Part 3 Section 1 *********************************
+2:16 AM :- Add Product class to Jaspreetsbooks.Models Project.Update the code.
