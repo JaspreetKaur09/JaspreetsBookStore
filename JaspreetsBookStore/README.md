@@ -170,3 +170,6 @@ Everything goes well.
 UPLOAD IT TO GITHUB!
 
 12:16 AM:- Create a pratial view in the views folder named it _CreateAndBackToListButton.then update the code.
+
+12:28 AM:- add the title object , model to the Upsert.cshtml file.
+UPLOAD IT TO GITHUB!
