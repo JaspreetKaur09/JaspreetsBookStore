@@ -168,3 +168,5 @@ Everything goes well.
 
 12:09 Am :- Then i add the Upsert razor view to the category folder and then update the code.
 UPLOAD IT TO GITHUB!
+
+12:16 AM:- Create a pratial view in the views folder named it _CreateAndBackToListButton.then update the code.
