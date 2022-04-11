@@ -161,3 +161,10 @@ Everything goes well.
 4:43 PM:- Add the icons to the category page and add the category.js file ,update the code in it.
 
 4:48 PM:-Add the @section call to the index.cshtml file and then save it,upload it to github.
+
+2022-04-10 
+
+11:59 PM :- Update the CategoryController file add an action method to Upsert. 
+
+12:09 Am :- Then i add the Upsert razor view to the category folder and then update the code.
+UPLOAD IT TO GITHUB!
