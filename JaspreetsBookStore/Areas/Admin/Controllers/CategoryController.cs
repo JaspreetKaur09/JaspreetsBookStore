@@ -35,7 +35,27 @@ namespace JaspreetsBookStore.Areas.Admin.Controllers
             {
                 return NotFound();
             }
-            return View();
+            return View(category);
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+
+        public IActionResult Upsert(Category category)
+        {
+            if (ModelState.IsValid)
+            {
+                if(category.Id == 0)
+                {
+                    _unitOfWork.Category.Add(category);
+                    _unitOfWork.Save();
+                }
+                else
+                {
+                    _unitOfWork.Category.Add(category);
+                    
+                }
+            }
+            return View(category);
         }
 
         //API Calls here

@@ -175,3 +175,5 @@ UPLOAD IT TO GITHUB!
 UPLOAD IT TO GITHUB!
 
 1:23 AM:- Add the Validation to the add category field. Then upload to github.
+
+1:29 AM:- add the save mthod to CategoryComtoller.cs file.
