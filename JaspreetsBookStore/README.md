@@ -187,3 +187,9 @@ Run the Application.
 2022-04-15
 
 8:55 PM : - I forogot to add the COvertype class in models project and then update the code ,upload it to github.
+
+2022-04-16 
+
+7:56 PM:- Add the CoverTypeRepositoryClass to repository folder and then uodate the code . 
+UPLOAD THE FILE TO GITHUB.
+
