@@ -183,3 +183,7 @@ Run the Application.
 
 **************************************** Part 3 Section 1 *********************************
 2:16 AM :- Add Product class to Jaspreetsbooks.Models Project.Update the code.
+
+2022-04-15
+
+8:55 PM : - I forogot to add the COvertype class in models project and then update the code ,upload it to github.

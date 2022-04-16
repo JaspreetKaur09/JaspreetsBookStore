@@ -14,5 +14,10 @@ namespace JaspreetsBookStore.DataAccess.Data
         {
         }
         public DbSet<Category> Categories { get; set; }
+
+        public DbSet<Category> CoverTypes { get; set; }
+        public DbSet<Category> Products { get; set; }
+
+
     }
 }
