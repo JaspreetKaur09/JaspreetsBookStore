@@ -200,3 +200,9 @@ I forgot to add the Interfaces and classes of product .
 
 8:07 PM :- Add the IProductRepository interface and ProductRepository class to the dataAccess project.
 
+8:24 PM : - Make the minor changes to the code and upload to gihub.
+
+8:48 PM:- Add the migration to the .DataAccess project. 
+20220417004812_AddProductToDb .
+
+Earlier it didn't work but then i remove it and add it again. Then it work.
