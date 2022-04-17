@@ -221,5 +221,9 @@ UPLOAD TO GITHUB!
 
 10:37 PM : -Update the Product controller, iAction upser to call productVM. 
 
-1-:43 PM :- Add the javascript files for product and coverType.
+10:43 PM :- Add the javascript files for product and coverType.
+
+10:59 PM :- Modify the index.cshtml file in product folder in areas. Link the product.js file to it.
+
+
 
