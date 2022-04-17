@@ -193,3 +193,10 @@ Run the Application.
 7:56 PM:- Add the CoverTypeRepositoryClass to repository folder and then uodate the code . 
 UPLOAD THE FILE TO GITHUB.
 
+8:00 PM :- Add the ICoverTypeRepository to the Irepository folder ,update the code.Then add the covertype to
+UnitOfWork and IUnitOfWork. 
+
+I forgot to add the Interfaces and classes of product . 
+
+8:07 PM :- Add the IProductRepository interface and ProductRepository class to the dataAccess project.
+
