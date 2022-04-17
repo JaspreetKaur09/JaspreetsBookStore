@@ -208,3 +208,14 @@ I forgot to add the Interfaces and classes of product .
 Earlier it didn't work but then i remove it and add it again. Then it work.
 
 9:02 PM :- Update the product class to title,author. UPLOAD TO GITHUB.
+
+9:05 PM :- 20220417010424_addValidationToProduct
+Add the mogration  to  .DataAccess project.Upload to github.
+
+10:00 PM : - Add the product controller to Areas/Admin/Controllers .Modify the code ,add the web host environment to the
+controller.
+
+10:30 PM:- Add the ProductVM model to ViewModels ,update the code. Install the  Microsoft.AspNetCore.Mvc.ViewFeatures in the project.
+
+UPLOAD TO GITHUB!
+
