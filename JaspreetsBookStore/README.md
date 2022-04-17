@@ -206,3 +206,5 @@ I forgot to add the Interfaces and classes of product .
 20220417004812_AddProductToDb .
 
 Earlier it didn't work but then i remove it and add it again. Then it work.
+
+9:02 PM :- Update the product class to title,author. UPLOAD TO GITHUB.
