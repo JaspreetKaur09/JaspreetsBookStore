@@ -219,3 +219,7 @@ controller.
 
 UPLOAD TO GITHUB!
 
+10:37 PM : -Update the Product controller, iAction upser to call productVM. 
+
+1-:43 PM :- Add the javascript files for product and coverType.
+
