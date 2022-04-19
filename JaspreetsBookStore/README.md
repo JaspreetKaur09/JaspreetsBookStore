@@ -225,5 +225,14 @@ UPLOAD TO GITHUB!
 
 10:59 PM :- Modify the index.cshtml file in product folder in areas. Link the product.js file to it.
 
+Build the solutino , there is no error. :)
 
+11:06 PM : - Add the Upsert.cs file to Product folder in Areas/Admin/Views.Modify the code.
+
+**************************************************************** PART-4 Assignment 2 ********************************************************************** 
+OMG! My category is not adding to the table. I need to review the files.
+
+2022-04-19 
+11:40 AM :- Update the code of CategoryController.cs file .
+upload it to github. 
 
