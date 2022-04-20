@@ -25,7 +25,6 @@ namespace JaspreetsBooks.DataAccess.Migrations
                 oldClrType: typeof(string),
                 oldType: "nvarchar(max)",
                 oldNullable: true);
-
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -45,7 +44,7 @@ namespace JaspreetsBooks.DataAccess.Migrations
                 nullable: true,
                 oldClrType: typeof(string),
                 oldType: "nvarchar(max)");
-
         }
     }
 }
+
