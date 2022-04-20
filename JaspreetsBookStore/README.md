@@ -248,3 +248,7 @@ directed to product page.
 
 9:23 AM :- I don't know why but earlier i downloaded the Micorosft.AspNetCore.Mvc.ViewFeatures package ,now it;s not in the 
 dependencies so i download it again.
+
+9:50 AM:- Delete the migration AddDefaultIdentityMigration and add the 20220420134936_AddStoredProcForCoverType to the JaspreetsBooks.DataAccess project.
+
+9:53 AM :- Update the code AddCoverTypeToDb migration.Upload to github.
