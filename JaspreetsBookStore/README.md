@@ -241,3 +241,10 @@ upload it to github.
 2022-04-20
 
 8:45:- Update the code in category.js file. But still there is sql error in thr projrct.:(
+
+9:14 AM:- Update the addValidationToproduct migration.save it and now let's see if everything is working well.
+Atleast now our product page is open earlier there was nothing when we click the product in navbar we are
+directed to product page.
+
+9:23 AM :- I don't know why but earlier i downloaded the Micorosft.AspNetCore.Mvc.ViewFeatures package ,now it;s not in the 
+dependencies so i download it again.
