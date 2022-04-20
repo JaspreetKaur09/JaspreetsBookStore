@@ -256,3 +256,5 @@ dependencies so i download it again.
 10:19 AM:-Add the images to images/products folder in wwrootfolder.
 
 10:51 AM:-Update the HomeController.cs file .Upload it to gihub.
+
+10:53 AM:- Add the razorpages to startu.cs file.
