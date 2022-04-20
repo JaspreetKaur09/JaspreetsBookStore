@@ -1,4 +1,6 @@
-﻿using JaspreetsBookStore.Models;
+﻿using JaspreetsBooks.DataAccess.Repository.IRepository;
+using JaspreetsBooks.Models;
+using JaspreetsBookStore.Models;
 using JaspreetsBookStore.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -14,15 +16,18 @@ namespace JaspreetsBookStore.Area.Customer.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly IUnitOfWork _unitOfWork;
 
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
+            _unitOfWork = _unitOfWork;
         }
 
         public IActionResult Index()
         {
-            return View();
+            IEnumerable<Product> productList = _unitOfWork.Product.GetAll(includeProperties: "Category,CoverType");
+            return View(productList);
         }
 
         public IActionResult Privacy()

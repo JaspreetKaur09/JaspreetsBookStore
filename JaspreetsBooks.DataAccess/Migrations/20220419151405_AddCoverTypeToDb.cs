@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
+using System;
 
 namespace JaspreetsBooks.DataAccess.Migrations
 {
@@ -248,5 +249,5 @@ namespace JaspreetsBooks.DataAccess.Migrations
         }
     }
 }
-    }
-}
+    
+

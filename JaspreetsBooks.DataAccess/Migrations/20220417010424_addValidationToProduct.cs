@@ -2,7 +2,7 @@
 
 namespace JaspreetsBooks.DataAccess.Migrations
 {
-    public partial class addValidationToProduct : Migration
+    public partial class AddValidationToProduct : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

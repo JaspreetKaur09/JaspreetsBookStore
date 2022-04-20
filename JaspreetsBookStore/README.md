@@ -252,3 +252,7 @@ dependencies so i download it again.
 9:50 AM:- Delete the migration AddDefaultIdentityMigration and add the 20220420134936_AddStoredProcForCoverType to the JaspreetsBooks.DataAccess project.
 
 9:53 AM :- Update the code AddCoverTypeToDb migration.Upload to github.
+
+10:19 AM:-Add the images to images/products folder in wwrootfolder.
+
+10:51 AM:-Update the HomeController.cs file .Upload it to gihub.

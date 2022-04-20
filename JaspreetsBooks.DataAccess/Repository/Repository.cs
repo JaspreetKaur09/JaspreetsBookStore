@@ -82,9 +82,6 @@ namespace JaspreetsBooks.DataAccess.Repository
         {
             dbSet.Remove(entity);
         }
-
-    
-
         public void RemoveRanges(IEnumerable<T> entity)
         {
             dbSet.RemoveRange(entity);

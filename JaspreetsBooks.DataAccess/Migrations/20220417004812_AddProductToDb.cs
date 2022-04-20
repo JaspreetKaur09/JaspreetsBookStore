@@ -4,6 +4,7 @@ namespace JaspreetsBooks.DataAccess.Migrations
 {
     public partial class AddProductToDb : Migration
     {
+
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropPrimaryKey(
