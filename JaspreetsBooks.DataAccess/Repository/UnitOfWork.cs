@@ -15,9 +15,11 @@ namespace JaspreetsBooks.DataAccess.Repository
         public UnitOfWork(ApplicationDbContext db)
         {
             _db = db;
+
             Category = new CategoryRepository(_db);
             CoverType = new CoverTypeRepository(_db);
             Product = new ProductRepository(_db);
+
             SP_Call = new SP_Call(_db);
         }
 

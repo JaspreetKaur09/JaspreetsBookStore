@@ -1,13 +1,13 @@
-﻿using Dapper;
-using JaspreetsBooks.DataAccess.Repository.IRepository;
-using JaspreetsBookStore.DataAccess.Data;
+﻿using JaspreetsBooks.DataAccess.Repository.IRepository;
+using Dapper;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using System.Threading.Tasks;
+using JaspreetsBookStore.DataAccess.Data;
 
 namespace JaspreetsBooks.DataAccess.Repository
 {
@@ -21,6 +21,7 @@ namespace JaspreetsBooks.DataAccess.Repository
             _db = db;
             ConnectionString = db.Database.GetDbConnection().ConnectionString;
         }
+
         public void Dispose()
         {
             _db.Dispose();
@@ -37,41 +38,40 @@ namespace JaspreetsBooks.DataAccess.Repository
 
         public IEnumerable<T> List<T>(string procedureName, DynamicParameters param = null)
         {
-            using(SqlConnection sqlCon = new SqlConnection(ConnectionString))
+            using (SqlConnection sqlCon = new SqlConnection(ConnectionString))
             {
                 sqlCon.Open();
                 return sqlCon.Query<T>(procedureName, param, commandType: System.Data.CommandType.StoredProcedure);
-
             }
         }
 
         public Tuple<IEnumerable<T1>, IEnumerable<T2>> List<T1, T2>(string procedureName, DynamicParameters param = null)
         {
-           using (SqlConnection sqlCon = new SqlConnection(ConnectionString))
+            using (SqlConnection sqlCon = new SqlConnection(ConnectionString))
             {
                 sqlCon.Open();
                 var result = SqlMapper.QueryMultiple(sqlCon, procedureName, param, commandType: System.Data.CommandType.StoredProcedure);
                 var item1 = result.Read<T1>().ToList();
                 var item2 = result.Read<T2>().ToList();
 
+
                 if (item1 != null && item2 != null)
                 {
                     return new Tuple<IEnumerable<T1>, IEnumerable<T2>>(item1, item2);
                 }
             }
+
             return new Tuple<IEnumerable<T1>, IEnumerable<T2>>(new List<T1>(), new List<T2>());
         }
 
         public T OneRecord<T>(string procedureName, DynamicParameters param = null)
         {
-            using (SqlConnection SqlCon = new SqlConnection(ConnectionString))
+            using (SqlConnection sqlCon = new SqlConnection(ConnectionString))
             {
-                SqlCon.Open();
-                var value = SqlCon.Query<T>(procedureName, param, commandType: System.Data.CommandType.StoredProcedure);
+                sqlCon.Open();
+                var value = sqlCon.Query<T>(procedureName, param, commandType: System.Data.CommandType.StoredProcedure);
                 return (T)Convert.ChangeType(value.FirstOrDefault(), typeof(T));
             }
-        
-
         }
 
         public T Single<T>(string procedureName, DynamicParameters param = null)
@@ -81,12 +81,6 @@ namespace JaspreetsBooks.DataAccess.Repository
                 sqlCon.Open();
                 return (T)Convert.ChangeType(sqlCon.ExecuteScalar<T>(procedureName, param, commandType: System.Data.CommandType.StoredProcedure), typeof(T));
             }
-
-
         }
     }
-
-
-        
-    
 }

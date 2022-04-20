@@ -1,4 +1,4 @@
-﻿using JaspreetsBooks.DataAccess.Repository.IRepository;
+﻿ using JaspreetsBooks.DataAccess.Repository.IRepository;
 using JaspreetsBooks.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -49,6 +49,7 @@ namespace JaspreetsBookStore.Areas.Admin.Controllers
                 if (category.Id == 0)
                 {
                     _unitOfWork.Category.Add(category);
+                    
                 }
                 else
                 {

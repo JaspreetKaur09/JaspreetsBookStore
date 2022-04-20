@@ -236,3 +236,8 @@ OMG! My category is not adding to the table. I need to review the files.
 11:40 AM :- Update the code of CategoryController.cs file .
 upload it to github. 
 
+11:52 :- Update the _Viewstart.cshtml file link the layout file to it. 
+
+2022-04-20
+
+8:45:- Update the code in category.js file. But still there is sql error in thr projrct.:(

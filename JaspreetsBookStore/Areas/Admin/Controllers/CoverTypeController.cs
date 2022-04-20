@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace JaspreetsBooks.Areas.Admin.Controllers
+namespace JaspreetsBookStore.Areas.Admin.Controllers
 {
     [Area("Admin")]
     public class CoverTypeController : Controller
