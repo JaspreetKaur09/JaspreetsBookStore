@@ -4,45 +4,18 @@ namespace JaspreetsBooks.DataAccess.Migrations
 {
     public partial class AddProductToDb : Migration
     {
-
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropPrimaryKey(
-                name: "PK_Category",
-                table: "Category");
-
-            migrationBuilder.RenameTable(
-                name: "Category",
-                newName: "Categories");
-
-            migrationBuilder.AddPrimaryKey(
-                name: "PK_Categories",
-                table: "Categories",
-                column: "Id");
-
-            migrationBuilder.CreateTable(
-                name: "CoverTypes",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_CoverTypes", x => x.Id);
-                });
-
             migrationBuilder.CreateTable(
                 name: "Products",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Title = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    ISBN = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Author = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ISBN = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Author = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     ListPrice = table.Column<double>(type: "float", nullable: false),
                     Price = table.Column<double>(type: "float", nullable: false),
                     Price50 = table.Column<double>(type: "float", nullable: false),
@@ -83,22 +56,9 @@ namespace JaspreetsBooks.DataAccess.Migrations
         {
             migrationBuilder.DropTable(
                 name: "Products");
-
-            migrationBuilder.DropTable(
-                name: "CoverTypes");
-
-            migrationBuilder.DropPrimaryKey(
-                name: "PK_Categories",
-                table: "Categories");
-
-            migrationBuilder.RenameTable(
-                name: "Categories",
-                newName: "Category");
-
-            migrationBuilder.AddPrimaryKey(
-                name: "PK_Category",
-                table: "Category",
-                column: "Id");
         }
     }
+
 }
+          
+

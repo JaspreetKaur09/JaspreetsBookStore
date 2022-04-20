@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-
-namespace JaspreetsBooks.Utility
+namespace JaspreetsBook.Utility
 {
     public static class SD
     {
@@ -14,3 +15,4 @@ namespace JaspreetsBooks.Utility
         public const string Proc_CoverType_Delete = "usp_DeleteCoverType";
     }
 }
+

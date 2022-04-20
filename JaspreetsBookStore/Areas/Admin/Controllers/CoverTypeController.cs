@@ -1,12 +1,12 @@
 ﻿using JaspreetsBooks.DataAccess.Repository.IRepository;
 using JaspreetsBooks.Models;
-using JaspreetsBooks.Utility;
 using Dapper;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using JaspreetsBook.Utility;
 
 namespace JaspreetsBookStore.Areas.Admin.Controllers
 {
