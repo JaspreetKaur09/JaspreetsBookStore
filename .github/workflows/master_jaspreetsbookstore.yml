@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'JaspreetsBookStore'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_FBD0CEA81B0248D1924FD8CD15946AE7 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_8C188EDA62064586A43C1435BC96E9C7 }}
           package: .
